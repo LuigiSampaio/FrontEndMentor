@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --var-color-dark-cyan: hsl(185, 75%, 39%);
+    --var-color-very-dark: hsl(229, 23%, 23%);
+    --var-color-dark-grayish: hsl(227, 10%, 46%);
+    --var-color-dark-gray: hsl(0, 0%, 59%);
+}
+
+html,
+body {
+    /* every 1rem will be considered 10px */
+    font-size: 62.5%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--var-color-dark-cyan);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.top-svg {
+    position: fixed;
+    height: 100rem;
+    left: -5rem;
+    top: -50rem;
+    transform: translateX(-35rem);
+}
+
+.bottom-svg {
+    position: fixed;
+    height: 95rem;
+    bottom: 0;
+    right: -25rem;
+    transform: translateY(65rem);
+}
+
+.card {
+    height: 40rem;
+    width: 35rem;
+    background-color: whitesmoke;
+    border-radius: 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    z-index: 1;
+}
+
+.image-svg img {
+    border-top-left-radius: 1.6rem;
+    border-top-right-radius: 1.6rem;
+}
+
+.photo {
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    background-color: whitesmoke;
+
+    margin-top: -20%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo img {
+    border-radius: 50%;
+    width: 12rem;
+}
+
+.text {
+    text-align: center;
+}
+
+.text p:first-child {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--var-color-very-dark);
+}
+
+.text p:last-child {
+    font-size: 1.6rem;
+    color: var(--var-color-dark-gray);
+    font-weight: 400;
+}
+
+.text span {
+    color: var(--var-color-dark-gray);
+    font-weight: 400;
+}
+
+.info {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-end;
+
+    border-top: 0.1rem solid var(--var-color-dark-gray);
+    text-align: center;
+}
+
+.score p:first-child {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--var-color-very-dark);
+}
+
+.score p:last-child {
+    color: var(--var-color-dark-gray);
+    font-size: 1.4rem;
+    line-height: 0.1rem;
+}
